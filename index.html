@@ -3,101 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Mathuran Koneswaran — AI/ML and full-stack developer building thoughtful digital products." />
-    <title>Mathuran — Builder of intelligent products</title>
+    <meta name="description" content="Mathuran Koneswaran — AI/ML and full-stack developer." />
+    <title>Mathuran — Digital Architect</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-noise" aria-hidden="true"></div>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Mathuran home"><span>m</span>/mathuran</a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="#work">Selected work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-github" href="https://github.com/Mathu-code" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+    <canvas id="space" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="logo" href="#home"><span>MK</span><strong>MATHURAN</strong></a>
+      <nav>
+        <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a class="github-link" href="https://github.com/Mathu-code" target="_blank" rel="noreferrer">GitHub <b>↗</b></a>
       </nav>
+      <button class="menu" aria-label="Open menu"><i></i><i></i></button>
     </header>
 
-    <main id="top">
-      <section class="hero section-wrap">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="pulse"></span> Available for meaningful work</div>
-          <h1>I build digital<br /><em>things that think.</em></h1>
-          <p class="hero-intro">I'm Mathuran — an AI/ML enthusiast and full-stack developer turning complex ideas into useful, human-centered products.</p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#work">Explore my work <span>↓</span></a>
-            <a class="text-link" href="mailto:mathurankoneswaran@gmail.com">Let's talk <span>↗</span></a>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <div class="status"><span></span> Building the future, one system at a time</div>
+          <h1>Digital<br /><em>architect</em><b>.</b></h1>
+          <p>AI/ML enthusiast, full-stack developer, and curious builder crafting intelligent experiences with code, data, and a little imagination.</p>
+          <div class="hero-buttons"><a class="primary-button" href="#work">Explore the universe <span>↓</span></a><a class="under-link" href="mailto:mathurankoneswaran@gmail.com">Let's connect ↗</a></div>
+        </div>
+        <div class="hero-scene">
+          <div class="scene-label label-one"><small>01</small><span>IDEAS</span></div>
+          <div class="scene-label label-two"><small>02</small><span>IMPACT</span></div>
+          <div class="planet">
+            <div class="planet-surface"></div><div class="planet-ring ring-one"></div><div class="planet-ring ring-two"></div>
+            <div class="planet-light"></div>
           </div>
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="satellite sat-one">AI</div><div class="satellite sat-two">ML</div>
         </div>
-        <div class="hero-visual reveal delay-1" aria-label="Abstract illustration of a neural network">
-          <div class="orb orb-one"></div><div class="orb orb-two"></div>
-          <div class="visual-card">
-            <div class="visual-top"><span class="mini-label">CURRENTLY EXPLORING</span><span class="live-dot"></span></div>
-            <div class="code-lines"><span>const</span> curiosity = <b>true</b>;<br /><span>const</span> nextBuild = <i>"something useful"</i>;<br /><br /><strong>→</strong> making ideas tangible<span class="cursor">_</span></div>
-            <div class="visual-footer"><span>AI / ML</span><span>FULL-STACK</span><span>DEVOPS</span></div>
-          </div>
-          <div class="floating-note note-top">01 <span>learn</span></div>
-          <div class="floating-note note-bottom">02 <span>build</span></div>
-        </div>
+        <div class="scroll-hint"><span class="scroll-line"></span> SCROLL TO EXPLORE</div>
       </section>
 
-      <section class="marquee" aria-label="Specialties">
-        <div class="marquee-track"><span>Artificial intelligence</span><b>✳</b><span>Product engineering</span><b>✳</b><span>Thoughtful interfaces</span><b>✳</b><span>Artificial intelligence</span><b>✳</b><span>Product engineering</span><b>✳</b></div>
-      </section>
+      <section class="ticker"><div>ARTIFICIAL INTELLIGENCE <b>✦</b> PRODUCT ENGINEERING <b>✦</b> CREATIVE TECHNOLOGY <b>✦</b> ARTIFICIAL INTELLIGENCE <b>✦</b></div></section>
 
-      <section class="section-wrap work-section" id="work">
-        <div class="section-heading reveal"><div><p class="section-kicker">01 / Selected work</p><h2>Ideas, shipped.</h2></div><p class="section-summary">A few projects from my ongoing journey of learning, experimenting, and making.</p></div>
-        <div class="project-grid">
-          <a class="project-card project-featured reveal" href="https://github.com/Mathu-code/it3030-paf-2026-smart-campus" target="_blank" rel="noreferrer">
-            <div class="project-art art-campus"><span class="art-label">SMART CAMPUS</span><div class="art-grid"></div><div class="art-orb"></div></div>
-            <div class="project-info"><div><p class="project-type">Spring Boot · React · ML</p><h3>Smart Campus<br />Operations Hub</h3></div><span class="circle-arrow">↗</span></div>
-            <p class="project-description">A role-based platform for campus resources, bookings, incidents, and ML-powered ticket prioritization.</p>
-          </a>
-          <a class="project-card reveal delay-1" href="https://github.com/Mathu-code/Customer-Churn-Prediction" target="_blank" rel="noreferrer">
-            <div class="project-art art-churn"><span class="art-label">DATA / 01</span><div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="chart-caption">retention<br />insights</span></div>
-            <div class="project-info"><div><p class="project-type">Python · Machine Learning</p><h3>Customer Churn<br />Prediction</h3></div><span class="circle-arrow">↗</span></div>
-            <p class="project-description">An end-to-end pipeline that turns customer signals into clear, actionable predictions.</p>
-          </a>
-          <a class="project-card reveal" href="https://github.com/Mathu-code/realtime-chat" target="_blank" rel="noreferrer">
-            <div class="project-art art-chat"><span class="art-label">REAL-TIME / 02</span><div class="chat-bubble bubble-one">Hey, what's new?</div><div class="chat-bubble bubble-two">Building something cool ✦</div><div class="chat-line"></div></div>
-            <div class="project-info"><div><p class="project-type">React · Node · Socket.IO</p><h3>Realtime<br />Chat</h3></div><span class="circle-arrow">↗</span></div>
-            <p class="project-description">A fast, familiar chat experience built for conversations that feel instant.</p>
-          </a>
-          <a class="project-card project-featured reveal delay-1" href="https://github.com/Mathu-code/Bus-Ticket-Booking" target="_blank" rel="noreferrer">
-            <div class="project-art art-bus"><span class="art-label">BUSGO / 03</span><div class="route"><span>A</span><div class="route-line"></div><span>B</span></div><div class="ticket-stub">SEAT 12A<br /><b>READY TO GO</b></div></div>
-            <div class="project-info"><div><p class="project-type">Full-stack · Payments · PDF</p><h3>BusGo<br />Booking</h3></div><span class="circle-arrow">↗</span></div>
-            <p class="project-description">A smoother way to find routes, choose seats, pay securely, and keep the ticket in hand.</p>
-          </a>
+      <section class="section work" id="work">
+        <div class="section-head"><div><span class="eyebrow">01 / Selected transmissions</span><h2>Things I've<br /><em>created.</em></h2></div><p>Real products, experiments, and ideas from my journey through software and data.</p></div>
+        <div class="work-grid">
+          <a class="project project-large" href="https://github.com/Mathu-code/it3030-paf-2026-smart-campus" target="_blank" rel="noreferrer"><div class="project-visual visual-campus"><span class="visual-tag">SMART CAMPUS / 01</span><div class="holo-cube"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="visual-scan"></div></div><div class="project-meta"><div><span>Spring Boot · React · ML</span><h3>Smart Campus<br />Operations Hub</h3></div><b>↗</b></div><p>Campus resources, bookings, incidents, and ML-powered ticket prioritization in one intelligent platform.</p></a>
+          <a class="project" href="https://github.com/Mathu-code/Customer-Churn-Prediction" target="_blank" rel="noreferrer"><div class="project-visual visual-data"><span class="visual-tag">DATA / 02</span><div class="data-orbit"></div><div class="data-bars"><i></i><i></i><i></i><i></i><i></i></div><strong>predict<br />what's next</strong></div><div class="project-meta"><div><span>Python · Machine Learning</span><h3>Customer Churn<br />Prediction</h3></div><b>↗</b></div><p>Turning customer signals into clear, actionable predictions through an end-to-end ML pipeline.</p></a>
+          <a class="project" href="https://github.com/Mathu-code/realtime-chat" target="_blank" rel="noreferrer"><div class="project-visual visual-chat"><span class="visual-tag">REALTIME / 03</span><div class="message m-one">Hey, what's new?</div><div class="message m-two">Building something cool ✦</div><div class="message m-three">● ● ●</div></div><div class="project-meta"><div><span>React · Node · Socket.IO</span><h3>Realtime<br />Chat</h3></div><b>↗</b></div><p>A familiar, fast chat experience designed for conversations that feel instant.</p></a>
+          <a class="project project-large" href="https://github.com/Mathu-code/Bus-Ticket-Booking" target="_blank" rel="noreferrer"><div class="project-visual visual-route"><span class="visual-tag">BUSGO / 04</span><div class="route-map"><span>A</span><div></div><span>B</span></div><div class="route-ticket">BUSGO<br /><strong>SEAT 12A</strong><small>READY TO GO</small></div></div><div class="project-meta"><div><span>Full-stack · Payments · PDF</span><h3>BusGo<br />Booking</h3></div><b>↗</b></div><p>A smoother way to find routes, choose seats, pay securely, and keep the ticket in hand.</p></a>
         </div>
-        <a class="all-projects text-link" href="https://github.com/Mathu-code?tab=repositories" target="_blank" rel="noreferrer">See all repositories <span>↗</span></a>
+        <a class="view-all" href="https://github.com/Mathu-code?tab=repositories" target="_blank" rel="noreferrer">View all repositories <span>↗</span></a>
       </section>
 
-      <section class="about-section" id="about">
-        <div class="section-wrap about-layout">
-          <div class="about-heading reveal"><p class="section-kicker">02 / A little about me</p><h2>Curious by<br /><em>default.</em></h2></div>
-          <div class="about-copy reveal delay-1"><p class="large-copy">I'm a third-year Data Science undergraduate at <strong>SLIIT</strong>, graduating in November 2027. I care about the space where thoughtful design, reliable engineering, and intelligent systems meet.</p><p>I like learning out loud, debugging patiently, and building things that make people's lives a little easier. Right now, I'm deepening my knowledge of cloud and DevOps, scalable web applications, and the mathematics behind computing.</p><div class="about-links"><a href="https://www.linkedin.com/in/mathuran-koneswaran-936306282" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a href="https://x.com/MassMathuran" target="_blank" rel="noreferrer">X / Twitter <span>↗</span></a><a href="https://github.com/Mathu-code" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div>
-        </div>
-      </section>
+      <section class="section about" id="about"><div class="about-orb"></div><div class="about-content"><span class="eyebrow">02 / Origin story</span><h2>Curiosity is<br />my <em>superpower.</em></h2><p class="about-lead">I'm a third-year Data Science undergraduate at <strong>SLIIT</strong>, graduating in November 2027. I build where thoughtful design, reliable engineering, and intelligent systems meet.</p><p class="about-detail">Currently exploring cloud and DevOps, scalable web applications, and the mathematics behind computing. I like learning out loud, debugging patiently, and making useful things.</p><div class="socials"><a href="https://github.com/Mathu-code" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/mathuran-koneswaran-936306282" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://x.com/MassMathuran" target="_blank" rel="noreferrer">X / Twitter ↗</a></div></div></section>
 
-      <section class="section-wrap toolkit-section">
-        <div class="section-heading reveal"><div><p class="section-kicker">03 / The toolkit</p><h2>Always learning.</h2></div><p class="section-summary">A growing set of tools for turning a blank page into something that works.</p></div>
-        <div class="toolkit-grid reveal">
-          <div class="tool-column"><span class="tool-number">01</span><h3>Languages</h3><p>C · C# · C++ · Java<br />Python · JavaScript · PHP<br />HTML · CSS · R · Kotlin</p></div>
-          <div class="tool-column"><span class="tool-number">02</span><h3>Build with</h3><p>React · Angular · Next.js<br />Node · Express · Spring Boot<br />Flutter · React Native</p></div>
-          <div class="tool-column"><span class="tool-number">03</span><h3>Data & infra</h3><p>MongoDB · MySQL · SQL Server<br />Git · Linux · Apache<br />Cloud & DevOps essentials</p></div>
-        </div>
-      </section>
+      <section class="section capabilities"><div class="section-head"><div><span class="eyebrow">03 / Current stack</span><h2>Tools for<br /><em>tomorrow.</em></h2></div><p>Always learning. Always building. A growing toolkit for turning blank pages into working systems.</p></div><div class="cap-grid"><div><small>01</small><h3>Languages</h3><p>Python · JavaScript · Java<br />C · C# · C++ · Kotlin<br />PHP · HTML · CSS · R</p></div><div><small>02</small><h3>Frameworks</h3><p>React · Angular · Next.js<br />Node · Express · Spring Boot<br />Flutter · React Native</p></div><div><small>03</small><h3>Infrastructure</h3><p>MongoDB · MySQL · SQL Server<br />Git · Linux · Apache<br />Cloud & DevOps essentials</p></div></div></section>
 
-      <section class="contact-section" id="contact">
-        <div class="section-wrap contact-inner reveal"><p class="section-kicker">04 / Start a conversation</p><h2>Have an idea?<br /><em>Let's make it real.</em></h2><a class="contact-email" href="mailto:mathurankoneswaran@gmail.com">mathurankoneswaran@gmail.com <span>↗</span></a><div class="contact-meta"><span>Based in Sri Lanka</span><span>Open to collaboration</span></div></div>
-      </section>
+      <section class="contact" id="contact"><div class="contact-inner"><span class="eyebrow">04 / Open channel</span><h2>Let's build<br /><em>what's next.</em></h2><a href="mailto:mathurankoneswaran@gmail.com">mathurankoneswaran@gmail.com <b>↗</b></a><div class="contact-foot"><span>Based in Sri Lanka</span><span>Open to meaningful collaboration</span></div></div></section>
     </main>
-    <footer class="site-footer section-wrap"><span>© 2026 Mathuran Koneswaran</span><span>Designed & built with intention.</span><a href="#top">Back to top ↑</a></footer>
+    <footer><span>© 2026 Mathuran Koneswaran</span><span>Designed in orbit.</span><a href="#home">Back to top ↑</a></footer>
     <script src="script.js"></script>
   </body>
 </html>
