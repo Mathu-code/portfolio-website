@@ -5,6 +5,15 @@ const scene = document.querySelector(".hero-scene");
 const menu = document.querySelector(".menu");
 const navigation = document.querySelector(".topbar nav");
 const projectCards = document.querySelectorAll(".project");
+const progressBar = document.querySelector(".scroll-progress span");
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: .18 });
 const particles = [];
 let width = 0;
 let height = 0;
@@ -40,12 +49,21 @@ function drawSpace() {
 }
 
 window.addEventListener("resize", resize);
+window.addEventListener("scroll", () => {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
+  progressBar.style.height = `${Math.min(100, progress * 100)}%`;
+  if (window.innerWidth > 900) {
+    const heroProgress = Math.min(1, window.scrollY / window.innerHeight);
+    scene.style.transform = `translate(${pointerX * -12}px, ${pointerY * -10 + heroProgress * 38}px) rotateX(${heroProgress * 5}deg)`;
+  }
+});
 window.addEventListener("pointermove", (event) => {
   pointerX = (event.clientX / window.innerWidth - .5) * 2;
   pointerY = (event.clientY / window.innerHeight - .5) * 2;
   glow.style.left = `${event.clientX}px`;
   glow.style.top = `${event.clientY}px`;
-  if (window.innerWidth > 750) scene.style.transform = `translate(${pointerX * -12}px, ${pointerY * -10}px)`;
+  if (window.innerWidth > 900) scene.style.transform = `translate(${pointerX * -12}px, ${pointerY * -10}px)`;
 });
 menu?.addEventListener("click", () => navigation.classList.toggle("open"));
 navigation?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => navigation.classList.remove("open")));
@@ -62,5 +80,6 @@ projectCards.forEach((card) => {
     visual.style.transform = "";
   });
 });
+document.querySelectorAll(".reveal-card").forEach((card) => revealObserver.observe(card));
 resize();
 drawSpace();
